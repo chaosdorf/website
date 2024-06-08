@@ -1,6 +1,7 @@
 const CleanCSS = require("clean-css");
 const yaml = require("js-yaml");
 const Image = require("@11ty/eleventy-img");
+const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 /**
  * @template T
@@ -18,6 +19,8 @@ const Image = require("@11ty/eleventy-img");
  * @type {(eleventyConfig: EleventyConfig) => RecursivePartial<EleventyReturnValue>}
  */
 module.exports = function (config) {
+  config.addPlugin(EleventyHtmlBasePlugin);
+
   config.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
   });
@@ -54,5 +57,6 @@ module.exports = function (config) {
       data: "../data",
       output: "dist",
     },
+    pathPrefix: process.env.ELEVENTY_PATH_PREFIX,
   };
 };

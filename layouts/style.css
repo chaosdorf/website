@@ -65,7 +65,7 @@ header {
       var(--color-bg) 1rem,
       rgba(255, 255, 255, 0) 6rem
     ),
-    url("/assets/hero.jpg");
+    url("{{ '/assets/hero.jpg' | htmlBaseUrl }}");
   background-size: cover;
   background-position: center;
   width: 100%;
