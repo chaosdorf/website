@@ -1,5 +1,6 @@
 const CleanCSS = require("clean-css");
 const yaml = require("js-yaml");
+const Image = require("@11ty/eleventy-img");
 
 /**
  * @template T
@@ -20,6 +21,27 @@ module.exports = function (config) {
   config.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
   });
+
+  config.addShortcode("image", async function (src, alt, sizes, style) {
+    let metadata = await Image(src, {
+      widths: [300, 600],
+      formats: ["avif", "jpeg"],
+      outputDir: "dist/img",
+    });
+
+    let imageAttributes = {
+      alt,
+      sizes,
+      loading: "lazy",
+      decoding: "async",
+      style,
+    };
+
+    // You bet we throw an error on a missing alt (alt="" works okay)
+    return Image.generateHTML(metadata, imageAttributes);
+  });
+
+  config.addPassthroughCopy("assets");
 
   config.addDataExtension("yaml", (contents) => yaml.load(contents));
 
