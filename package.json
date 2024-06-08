@@ -1,7 +1,7 @@
 {
   "name": "chaosdorf-website",
   "scripts": {
-    "start": "eleventy --serve",
+    "start": "eleventy --serve --watch",
     "build": "eleventy"
   },
   "dependencies": {
