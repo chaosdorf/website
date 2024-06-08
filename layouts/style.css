@@ -105,6 +105,7 @@ header nav ul {
   gap: 1rem;
   height: 45%;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 footer {
