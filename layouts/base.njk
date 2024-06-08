@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="{{ eleventy.generator }}">
+
+    {% set title %}{{ title | default(meta.title) }}{% endset %}
+    {% set description %}{{ description | default(meta.description) }}{% endset %}
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    <meta property="og:locale" content="de">
+    <meta property="og:site_name" content="{{ meta.site_name }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:url" content="{{ page.url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="{{ description }}">
+
+    <link rel="me" href="mailto:{{ meta.contact.mail }}" />
+    <link rel="me" href="{{ meta.contact.mastodon }}" />
+
+    {% set css %}
+      {% include "./style.css" %}
+    {% endset %}
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
+  </head>
+  <body>
+    {{ content | safe }}
+  </body>
+</html>

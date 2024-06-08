@@ -1,0 +1,12 @@
+{
+  "name": "chaosdorf-website",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "clean-css": "^5.3.3",
+    "js-yaml": "^4.1.0"
+  }
+}
