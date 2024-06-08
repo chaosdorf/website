@@ -1,0 +1,12 @@
+<header>
+  {% include "./assets/logo-monochrome.svg" %}
+  <nav>
+    <ul>
+    {%- for page in collections.all -%}
+    {%- if page.data.header_link -%}
+      <li><a href="{{ page.url }}">{{ page.data.title }}</a></li>
+    {%- endif -%}
+    {%- endfor -%}
+    </ul>
+  </nav>
+</header>

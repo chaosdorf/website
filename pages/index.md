@@ -2,6 +2,23 @@
 title: Startseite
 ---
 
+Lust auf Lernen, Hacken, Erfinden, Entdecken oder einfach nur neue Leute kennenlernen?
+Dann bist du hier genau richtig.
+Hier ist jeder willkommen, unabhänig wie viel du weißt.
+Niemand hier ist experte für alles und deswegen musst du das auch nicht sein. Viel mehr gilt hier, wenn dich etwas interessiert frag einfach und es wird eine Person geben die dir freudig alles erklärt.
+
+...something something wir sind das Kollektiv des Chaosdorfs...
+... glaube an Diversität und ineresieren uns für eig alles, ob Programmieren, Siebdruck, Löten, Züge, Fotographie, Videotechnik, 3D-Druck, Desgin, immer her damit.
+... Lernen Vortragen etc...
+
+Das Kollektiv des Chaosdorfs ist Teil einer globalen Gemeinschaft, die viele solche Orte betreibt und spaßige Konferenzen organisiert. Komm mit auf die Reise und finde noch mehr Menschen und Ideen, die deine Welt größer machen werden!
+
+---
+
+<div class="video-embed"><iframe src="https://media.ccc.de/v/chaosdorf-56095-chaos-in-ddorf-open-sour/oembed" frameborder="0" allowfullscreen></iframe></div>
+
+---
+
 ### Was
 
 Das Chaosdorf ist ein sogenannter Hackspace. Ein Hackspace ist ein physischer Ort, der von einem Kollektiv betrieben wird, damit Menschen sich dort treffen können und an ihren Projekten arbeiten. Das Chaosdorf ist wie jeder Hackspace genau so wie die anderen und ein bisschen anders. Was genau in einem Hackspace zu finden ist, hängt von den Menschen ab, die dort unterwegs sind.

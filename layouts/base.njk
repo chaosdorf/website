@@ -30,11 +30,12 @@
     </style>
   </head>
   <body>
+    {% include "header.njk" %}
     <main>
-      {{ logos["logo-monochrome.svg"] | safe }}
       <article>
         {{ content | safe }}
       </article>
     </main>
+    {% include "footer.njk" %}
   </body>
 </html>
