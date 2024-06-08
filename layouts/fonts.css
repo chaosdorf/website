@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "CP Mono";
+  font-style: normal;
+  font-weight: 200;
+  src: local("CPMono_v07 ExtraLight"),
+    url("assets/fonts/CPMono_v07_ExtraLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CP Mono";
+  font-style: normal;
+  font-weight: 300;
+  src: local("CPMono_v07 Light"),
+    url("assets/fonts/CPMono_v07_Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CP Mono";
+  font-style: normal;
+  font-weight: normal;
+  src: local("CPMono_v07 Plain"),
+    url("assets/fonts/CPMono_v07_Plain.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CP Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: local("CPMono_v07 Bold"),
+    url("assets/fonts/CPMono_v07_Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "CP Mono";
+  font-style: normal;
+  font-weight: 900;
+  src: local("CPMono_v07 Black"),
+    url("assets/fonts/CPMono_v07_Black.woff") format("woff");
+}
