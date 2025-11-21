@@ -10,7 +10,7 @@ jobs:
     env:
       ELEVENTY_PATH_PREFIX: website
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Install dependencies
         run: npm ci
       - name: Build site
